@@ -1,11 +1,11 @@
 **AI Systems · Infrastructure · Science**
 
+### Contact
+
 <p>
   <a href="https://kuanzhou.online"><img src="https://img.shields.io/badge/Website-kuanzhou.online-24292f?style=flat&logo=googlechrome&logoColor=white" alt="Personal website" /></a>
   <a href="https://www.linkedin.com/in/kuanzhou/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
-
----
 
 ### GitHub
 
