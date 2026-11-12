@@ -1,5 +1,3 @@
-# Kuan Zhou
-
 **AI Systems · Infrastructure · Research**
 
 <p>
@@ -14,7 +12,7 @@
 <p>
   <img src="https://komarev.com/ghpvc/?username=kzhou003&style=flat&color=24292f&label=Profile%20views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/kzhou003?style=flat&color=24292f&label=Followers" alt="Followers" />
-  <img src="https://img.shields.io/github/repos/kzhou003?style=flat&color=24292f&label=Public%20repos" alt="Public repositories" />
-  <a href="https://github.com/kzhou003?tab=stars"><img src="https://img.shields.io/badge/Stars-Explore%20repos-24292f?style=flat&logo=github&logoColor=white" alt="Explore starred repositories" /></a>
+  <img src="https://img.shields.io/github/created-at/kzhou003?style=flat&color=24292f&label=Joined" alt="GitHub joined date" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkzhou003%2Fkzhou003%2Fmain%2Fstars.json" alt="Total stars received across owned public repositories" />
   <a href="https://github.com/kzhou003?tab=contributions"><img src="https://img.shields.io/badge/Contributions-Activity-24292f?style=flat&logo=github&logoColor=white" alt="Contribution activity" /></a>
 </p>
