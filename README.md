@@ -1,10 +1,6 @@
 # Kuan Zhou
 
-**AI Systems · Infrastructure · Research**
-
-### Passion
-
-Exploring the synergy between science and technology, building AI applications.
+**BUILD · EXPLORE · UNDERSTAND**
 
 ### Currently into
 
@@ -12,12 +8,6 @@ Exploring the synergy between science and technology, building AI applications.
 - Distributed Computing & GPU Systems
 - Omni Models
 - Omarchy OS — enjoying the simplicity of Linux again.
-
-> “What I cannot create, I do not understand.”
->
-> — Richard Feynman
-
-**BUILD · EXPLORE · UNDERSTAND**
 
 ---
 
