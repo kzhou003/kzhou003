@@ -1,4 +1,4 @@
-**AI Systems · Infrastructure · Research**
+**AI Systems · Infrastructure · Science**
 
 <p>
   <a href="https://kuanzhou.online"><img src="https://img.shields.io/badge/Website-kuanzhou.online-24292f?style=flat&logo=googlechrome&logoColor=white" alt="Personal website" /></a>
