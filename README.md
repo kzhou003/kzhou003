@@ -11,13 +11,9 @@
 
 ---
 
-### GitHub Metrics
+### GitHub
 
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=kzhou003&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kzhou003&layout=compact&hide_border=true&theme=transparent" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=kzhou003&hide_border=true&theme=transparent" />
+<p>
+  <img src="https://img.shields.io/github/followers/kzhou003?style=flat&label=Followers" />
+  <img src="https://img.shields.io/github/stars/kzhou003/kzhou003?style=flat&label=Stars" />
 </p>
