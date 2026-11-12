@@ -1,0 +1,68 @@
+name: Update profile star count
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Calculate stars received across owned public repositories
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          username = "kzhou003"
+          token = os.environ["GH_TOKEN"]
+          headers = {
+              "Accept": "application/vnd.github+json",
+              "Authorization": f"Bearer {token}",
+              "X-GitHub-Api-Version": "2022-11-28",
+          }
+
+          repos = []
+          page = 1
+          while True:
+              url = f"https://api.github.com/users/{username}/repos?type=owner&per_page=100&page={page}"
+              request = urllib.request.Request(url, headers=headers)
+              with urllib.request.urlopen(request) as response:
+                  batch = json.load(response)
+              if not batch:
+                  break
+              repos.extend(batch)
+              page += 1
+
+          total = sum(repo.get("stargazers_count", 0) for repo in repos if not repo.get("fork", False))
+          badge = {
+              "schemaVersion": 1,
+              "label": "Stars received",
+              "message": str(total),
+              "color": "24292f",
+          }
+          with open("stars.json", "w", encoding="utf-8") as output:
+              json.dump(badge, output, ensure_ascii=False, indent=2)
+              output.write("\n")
+          print(f"Stars received across {sum(not r.get('fork', False) for r in repos)} owned public repositories: {total}")
+          PY
+
+      - name: Commit updated metric
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stars.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update total stars received"
+            git push
+          fi
