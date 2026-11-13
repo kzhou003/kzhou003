@@ -1,6 +1,6 @@
 <div align="center">
 
-  :lion: explore, focus, go the extra miles, dare to lead
+  :lion: explore, focus, go the extra miles
 
   :notes: ai infrastructure, agentic products, science
 
