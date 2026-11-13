@@ -13,8 +13,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           total=$(gh api --paginate /users/${{ github.repository_owner }}/repos \
-            --jq '[.[] | select(.fork | not) | .stargazers_count] | add // 0' \
-            | paste -sd+ | bc)
+            --jq '[.[] | .stargazers_count] | add // 0' | paste -sd+ | bc)
           printf '{\n  "schemaVersion": 1,\n  "label": "stars",\n  "message": "%s",\n  "color": "c2a56b"\n}\n' "$total" > stars.json
       - run: |
           git config user.name github-actions
