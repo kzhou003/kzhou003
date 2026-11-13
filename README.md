@@ -1,6 +1,6 @@
 <div align="center">
 
-:monorail: explore, focus, go the extra miles
+:lion: explore, focus, go the extra miles
 
 :notes: ai infrastructure, agentic products, science
 
