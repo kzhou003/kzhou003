@@ -1,5 +1,7 @@
 <div align="center">
 
+explore, focus, go the extra miles. 
+
 **AI Systems · Infrastructure · Science**
 
 ### Contact
